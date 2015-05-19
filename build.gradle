@@ -37,7 +37,7 @@ apply plugin: 'forge'
 apply plugin: 'java' // or 'groovy'. Must be explicitly applied
 apply plugin: 'maven-publish'
 
-def jenkinsBuild = System.getenv("BUILD_NUMBER") ?: "3"
+def jenkinsBuild = System.getenv("BUILD_NUMBER") ?: "SNAPSHOT"
 version = "${minecraft_version}-${PurpleIRC_version}-${jenkinsBuild}"
 group = "com.cnaude.purpleirc"
 archivesBaseName = "PurpleIRC"
