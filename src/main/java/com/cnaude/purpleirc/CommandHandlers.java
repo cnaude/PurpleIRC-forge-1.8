@@ -120,11 +120,6 @@ public class CommandHandlers implements ICommand {
     }
 
     @Override
-    public int compareTo(Object o) {
-        return getCommandName().compareTo(((ICommand) o).getCommandName());
-    }
-
-    @Override
     public String getCommandName() {
         return "irc";
     }
@@ -152,6 +147,11 @@ public class CommandHandlers implements ICommand {
 
     @Override
     public java.util.List addTabCompletionOptions(ICommandSender ics, String[] strings, BlockPos bp) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int compareTo(ICommand o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

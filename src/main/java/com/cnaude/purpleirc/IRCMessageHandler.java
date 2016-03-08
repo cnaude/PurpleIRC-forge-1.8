@@ -124,10 +124,7 @@ public class IRCMessageHandler {
                                 sendMessage(ircBot, target, plugin.getServerMotd(), ctcpResponse);
                                 break;
                             case "@version":
-                                sendMessage(ircBot, target, 
-                                        "Minecraft: " + MinecraftForge.MC_VERSION
-                                        + " (" + MinecraftForge.getBrandingVersion() + ")",
-                                        ctcpResponse);
+                                sendMessage(ircBot, target, "Minecraft: " + MinecraftForge.MC_VERSION, ctcpResponse);
                                 break;
                             case "@msg":
                                 ircBot.playerChat(user, channel, target, commandArgs);
