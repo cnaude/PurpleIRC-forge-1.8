@@ -107,7 +107,7 @@ public final class PurpleConfiguration {
     public <T> void set(String field, T value) {
         result.put(field, (T) value);
     }
-    
+
     public <T> void set(String field, String subField, T value) {
         if (result.containsKey(field)) {
             if (result.get(field) instanceof Map) {
