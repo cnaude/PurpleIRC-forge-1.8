@@ -974,7 +974,7 @@ public final class PurpleBot {
      * @param message
      */
     public void consoleChat(String channelName, String message) {
-        if (!this.isConnected()) {
+        if (!this.isConnected() || message.isEmpty()) {
             return;
         }
         if (isValidChannel(channelName)) {
@@ -989,7 +989,7 @@ public final class PurpleBot {
      * @param message
      */
     public void consoleChat(String message) {
-        if (!this.isConnected()) {
+        if (!this.isConnected() || message.isEmpty()) {
             return;
         }
         for (String channelName : botChannels) {
